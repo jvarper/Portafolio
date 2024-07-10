@@ -94,10 +94,18 @@ nav li a:hover {
     justify-content: space-between;
     align-items: center;
     flex-direction: row-reverse;
-    ;
 }
 
 .hero_container {
+    width: 1136px;
+    height: 368px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.hero_container_items {
     width: 751px;
     height: 246px;
     gap: 24px;
@@ -109,7 +117,7 @@ nav li a:hover {
 .hero_h2 {
     font-size: 52px;
     font-weight: 700;
-    line-height: 61, 05px;
+    line-height: 61.05px;
     color: #464646;
 
 }
@@ -144,7 +152,7 @@ nav li a:hover {
 /*///////////////// FRAME /////////////////*/
 
 .about {
-    width: 1440px;
+    width: 100%;
     height: 383px;
     display: flex;
     align-items: center;
@@ -187,7 +195,7 @@ nav li a:hover {
 
 /*//////////// SKILLS ////////////*/
 .skills_hobbies_academic {
-    width: 1440px;
+    width: 100%;
     height: 1245px;
     display: flex;
     flex-flow: column;
@@ -294,7 +302,7 @@ nav li a:hover {
 
 /*//////////// ACADEMIC ////////////*/
 .academic_container {
-    width: 1440px;
+    width: 100%;
     height: 581px;
     padding: 82px;
     display: flex;
@@ -475,7 +483,7 @@ nav li a:hover {
 
 /*//////////// CONTACTO ////////////*/
 .contacto {
-    width: 1440px;
+    width: 100%;
     height: auto;
     display: flex;
     justify-content: center;
@@ -520,6 +528,7 @@ nav li a:hover {
     font-weight: 500;
     line-height: 18.78px;
 }
+
 .contacto_form_box_header {
     width: 656px;
     height: 72px;
@@ -606,11 +615,11 @@ nav li a:hover {
     /* Menú */
     .topo {
         width: 768px;
-        height: 88px;
+        height: 56px;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 16px 0px 16px 0px;
+        padding: 16px 32px 16px 32px;
     }
 
     .logo {
@@ -639,10 +648,18 @@ nav li a:hover {
         justify-content: space-around;
         align-items: center;
         flex-direction: row-reverse;
-        ;
     }
 
     .hero_container {
+        width: 768px;
+        height: 210px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row-reverse;
+    }
+
+    .hero_container_items {
         width: 524px;
         height: 130px;
         gap: 8px;
@@ -934,7 +951,7 @@ nav li a:hover {
         height: auto;
         display: flex;
         justify-content: center;
-        gap: 10px;        
+        gap: 10px;
     }
 
     .contacto_form {
@@ -1036,25 +1053,470 @@ nav li a:hover {
     }
 }
 
+/* /////////////////////////////// MOBILE /////////////////////////////// */ 
 /*Mobile*/
-@media (min-width: 425px) {
+@media (max-width: 360px) {
+    .tudo {
+        width: 360px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+    }
 
-    /*Menu*/
+    .body {
+        width: 360px;
+        height: 4475px;
+    }
 
-    /*Titulo*/
+    /* Menú */
+    .topo {
+        width: 360px;
+        height: 56px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 16px;
+    }
 
-    /*Sección sobre mi*/
+    .logo {
+        width: 200px;
+        height: 24px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 10px;
+
+    }
+
+    .nav_list {
+        display: none;
+    }
+
+    .nav_list_contact {
+        display: flex;
+    }
+
+    /*Hero*/
+    .hero {
+        width: 360px;
+        height: 360px;
+        display: flex;
+        align-items: center;        
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .hero_container {
+        width: 360px;
+        height: 360px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        /* padding: 16px; */
+        gap: 30px;
+    }
+
+    .hero_container_items {
+        width: 328px;
+        height: 148px;
+        gap: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+
+    .hero_h2 {
+        width: 328px;
+        height: 52px;
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 25.83px;
+        color: #464646;
+
+    }
+
+    .hero_h3 {
+        width: 328px;
+        height: 48px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16.44px;
+    }
+
+    .hero_networks {
+        width: 318px;
+        height: 16px;
+        gap: 8px;
+        display: flex;
+    }  
+    .hero_networks_item:nth-of-type(1) {
+        width: 61px; /* Ancho para el primer li */
+    }
+    
+    .hero_networks_item:nth-of-type(2) {
+        width: 73px; /* Ancho para el segundo li */
+    }
+    
+    .hero_networks_item:nth-of-type(3) {
+        width: 83px; /* Ancho para el tercer li */
+    }
+
+    .hero_networks>li>a {
+        font-size: 14px;
+    }
+
+    .hero_img {
+        width: 146px;
+        height: 146px;
+        border-radius: 50%;
+    }
+
+    /*Frame*/
+    .about {
+        width: 360px;
+        height: 350px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .about_container {
+        width: 360px;
+        height: 318px;
+        display: flex;
+        flex-flow: column;
+        gap: 16px;
+        padding: 16px;
+    }
+
+    .about_h2 {
+        width: 94px;
+        height: 26px;
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 25.83px;
+    }
+
+    .about_h3 {
+        width: 328px;
+        height: 208px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16.44px;
+    }
 
     /*Skills*/
+    .skills_hobbies_academic {
+        width: 360px;
+        height: auto;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        gap: 32px;
+        padding: 16px;
+    }
 
-    /*Hobbies*/
+    .skills_container,
+    .hobbies_container {
+        width: 360px;
+        height: auto;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        gap: 32px;
+    }
+
+    .skills_container_h2,
+    .hobbies_container_h2 {
+        width: 57px;
+        height: 26px;
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 25.83px;
+    }
+
+    .skills_container_box,
+    .hobbies_container_box {
+        width: 360px;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .skills_container_box_items_js,
+    .skills_container_box_items_css,
+    .skills_container_box_items_html,
+    .skills_container_box_items_react,
+    .skills_container_box_items_nodejs,
+    .skills_container_box_items_sql,
+    .hobbies_container_box_items_games,
+    .hobbies_container_box_items_series,
+    .hobbies_container_box_items_develop,
+    .hobbies_container_box_items_soccer,
+    .hobbies_container_box_items_ride,
+    .hobbies_container_box_items_fitness {
+        width: 138px;
+        height: 140px;
+        padding: 16px;
+        display: flex;
+        gap: 8px;
+        border: 1px solid purple;
+    }
 
     /*Formación Académica*/
+    .academic_container {
+        width: 360px;
+        height: 291px;
+        padding: 32px;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        gap: 32px;
+    }
+
+    .academic_container_h2 {
+        width: 233px;
+        height: 26px;
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 25.83px;
+        align-self: center;
+    }
+
+    .academic_container_box {
+        width: 360px;
+        height: 169px;
+        display: flex;
+        gap: 16px;
+    }
+
+    .academic_container_box_items {
+        width: 224px;
+        height: 169px;
+        gap: 8px
+    }
+
+    .academic_container_box_items_li_img {
+        width: 224px;
+        height: 118px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .academic_container_box_items_img1,
+    .academic_container_box_items_img2,
+    .academic_container_box_items_img3 {
+        width: 224px;
+        height: 118px;
+    }
+
+    .academic_container_box_items>ul {
+        list-style: none;
+        display: flex;
+        flex-flow: column;
+        gap: 8px;
+    }
+
+    .academic_container_box_items>ul>li h4 {
+        width: 130px;
+        height: 19px;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 18.78px;
+    }
+
+    .academic_container_box_items>ul>li>p {
+        width: 81px;
+        height: 16px;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 16.44px;
+    }
 
     /*Experiencia Profesional*/
+    .experience {
+        width: 768px;
+        height: auto;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        align-content: center;
+        padding: 16px;
+        gap: 16px;
+    }
 
-    /*Contacto*/
+    .experience>h2 {
+        width: 248px;
+        height: 26px;
+        text-align: center;
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 25.83px;
+    }
+
+    .experience_container {
+        width: 704px;
+        height: 1911;
+        display: flex;
+        flex-flow: column;
+        gap: 64px;
+    }
+
+    .experience_container_items {
+        width: 704px;
+        height: 427px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px
+    }
+
+    .experience_container_items_img {
+        width: 704px;
+        height: 320px;
+    }
+
+    .exp_cont_itm_img {
+        width: 704px;
+        height: 320px;
+    }
+
+    .experience_container_items_info {
+        width: 704px;
+        height: 91px;
+        display: flex;
+        flex-flow: column;
+        gap: 8px;
+    }
+
+    .experience_container_items_info>h2 {
+        width: 704px;
+        height: 19px;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 18.78px;
+    }
+
+    .experience_container_items_info>h3 {
+        width: 704px;
+        height: 16px;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 16.44px;
+    }
+
+    /*Contact*/
+    .contacto {
+        width: 768px;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+    .contacto_form {
+        width: 704px;
+        height: 573px;
+        padding: 32px 0px 0px 0px;
+        display: flex;
+        gap: 10px;
+    }
+
+    .contacto_form_img {
+        display: none;
+    }
+
+    .img_form_contacto {
+        width: 0%;
+    }
+
+    .contacto_form_box {
+        width: 704px;
+        height: 397px;
+        display: flex;
+        flex-flow: column;
+        gap: 32px;
+    }
+
+    .contacto_form_box_header>h2 {
+        width: 97px;
+        height: 26px;
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 25.837px;
+    }
+
+    .contacto_form_box_header>h3 {
+        width: 656px;
+        height: 38px;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 18.78px;
+    }
+
+    .contacto_form_box_fields {
+        width: 704px;
+        height: 397px;
+        display: flex;
+        flex-flow: column;
+        gap: 32px
+    }
+
+    .contacto_form_input {
+        width: 704px;
+        height: 56px;
+        gap: 8px
+    }
+
+    .contacto_form_textarea {
+        width: 704px;
+        height: 133px;
+        gap: 8px
+    }
+
+    .contacto_form_button {
+        width: 133px;
+        height: 40px;
+        padding: 16px;
+        gap: 10px;
+    }
 
     /*Footer*/
+    .footer {
+        width: 768px;
+        height: 102px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
 
+    .footer_container {
+        width: 229px;
+        height: 38px;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 18.78ps;
+        text-align: center;
+    }
+
+    .ir-arriba {
+        display: none;
+        padding: 20px;
+        background: #024959;
+        font-size: 20px;
+        color: #fff;
+        cursor: pointer;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+    }
 }
