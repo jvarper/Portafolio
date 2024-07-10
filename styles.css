@@ -1,0 +1,550 @@
+/*///////////////// GLOBALES /////////////////*/
+
+button {
+    cursor: pointer;
+    border-radius: 10px;
+}
+button:hover {
+    background-color: black;
+}
+/*///////////////// BODY /////////////////*/
+body {
+    font-family: "Raleway";
+
+}
+
+.body {
+    width: 1440px;
+    height: 5020px;
+    top: -289px;
+    left: -123px;
+    background-color: #F5F5F5;
+}
+
+h3 {}
+
+.tudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+/*///////////////// HEADER /////////////////*/
+.topo {
+    width: 1136px;
+    height: 88px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    ;
+}
+
+.logo {
+    width: 200px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    
+}
+
+.logo_img {
+    width: 24px;
+    height: 24px;
+}
+
+.logo_text {
+    width: 100%;
+    height: 19px;
+    font-size: 16px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.nav_list {
+    width: 653px;
+    height: 19px;
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+nav li a {
+    cursor: pointer;
+    text-decoration: none;
+    color: #464646;
+}
+nav li a:hover {
+    text-decoration-line: underline;
+}
+
+
+/*///////////////// HERO /////////////////*/
+
+.hero {
+    width: 1136px;
+    height: 368px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+    ;
+}
+
+.hero_container {
+    width: 751px;
+    height: 246px;
+    gap: 24px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hero_h2 {
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 61, 05px;
+    color: #464646;
+    
+}
+
+.hero_h3 {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 25.83px;
+    
+}
+
+.hero_networks {
+    gap: 32px;
+    display: flex;   
+}
+.hero_networks>li>a {
+    text-decoration: none;
+}
+.hero_networks>li>a:hover {
+    text-decoration-line: underline;
+}
+
+.hero_img {
+    width: 368px;
+    height: 368px;
+    border-radius: 50%;
+}
+
+
+/*///////////////// FRAME /////////////////*/
+
+.about {
+    width: 1440px;
+    height: 383px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: #EAF2FD;    
+}
+
+.about_container {
+    width: 1136px;
+    height: 255px;
+    display: flex;
+    flex-flow: column;
+    gap: 16px;
+}
+
+.about_h2 {
+    width: 137px;
+    height: 38px;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 37.57px;
+    color: #464646;
+    
+}
+
+.about_h3 {
+    width: 751px;
+    height: 133px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.78px;
+    color: #464646;
+    
+}
+
+.about_img {}
+
+/*///////////////// SKILLS / HOBBIES / ACADEMIC /////////////////*/
+
+/*//////////// SKILLS ////////////*/
+.skills_hobbies_academic {
+    width: 1440px;
+    height: 1245px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 88px;
+}
+
+.skills_container,
+.hobbies_container {
+    width: 1136px;
+    height: 244px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 32px;
+    
+}
+
+.skills_container_box,
+.hobbies_container_box {
+    width: 1136px;
+    height: 174px;
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.skills_container_h2,
+.hobbies_container_h2 {
+    height: 38px;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 37.57px;
+}
+
+.skills_container_box_items_js,
+.skills_container_box_items_css,
+.skills_container_box_items_html,
+.skills_container_box_items_react,
+.skills_container_box_items_nodejs,
+.skills_container_box_items_sql,
+.hobbies_container_box_items_games,
+.hobbies_container_box_items_series,
+.hobbies_container_box_items_develop,
+.hobbies_container_box_items_soccer,
+.hobbies_container_box_items_ride,
+.hobbies_container_box_items_fitness {
+    width: 176px;
+    height: auto;
+    padding: 16px;
+    display: flex;
+    gap: 8px;
+    border: 1px solid purple;
+}
+
+.skills_container_box_items_js {
+    background-image: url(assets/icons8-javascript-240.png);
+}
+
+.skills_container_box_items_css {
+    background-image: url(assets/icons8-css-240.png);
+}
+
+.skills_container_box_items_html {
+    background-image: url(assets/icons8-html-176.png);
+}
+
+.skills_container_box_items_react {
+    background-image: url(assets/icons8-react-176.png);
+}
+
+.skills_container_box_items_nodejs {
+    background-image: url(assets/icons8-nodo-js-176.png);
+}
+
+.skills_container_box_items_sql {
+    background-image: url(assets/icons8-mysql-176.png);
+}
+
+/*//////////// HOBBIES ////////////*/
+.hobbies_container_box_items_games {
+    background-image: url(assets/IonXbox.svg);
+}
+
+.hobbies_container_box_items_series {
+    background-image: url(assets/MingcuteTv1Fill.svg);
+}
+
+.hobbies_container_box_items_develop {
+    background-image: url(assets/MaterialSymbolsDeveloperModeTvRounded.svg);
+}
+
+.hobbies_container_box_items_soccer {
+    background-image: url(assets/EmojioneMonotoneSoccerBall.svg);
+}
+
+.hobbies_container_box_items_ride {
+    background-image: url(assets/PhMotorcycleFill.svg);
+}
+
+.hobbies_container_box_items_fitness {
+    background-image: url(assets/MingcuteFitnessFill.svg);
+}
+
+/*//////////// ACADEMIC ////////////*/
+.academic_container {
+    width: 1440px;
+    height: 581px;
+    padding: 82px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 32px;
+    background-color: #EAF2FD;
+}
+
+.academic_container_h2 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 37.57px;
+    align-self: center;
+}
+
+.academic_container_box {
+    width: 1136px;
+    height: 347px;
+    display: flex;
+    gap: 16px;
+}
+
+.academic_container_box_items {
+    width: 368px;
+    height: 347px;
+
+}
+
+.academic_container_box_items_li_img {
+    width: auto;
+    height: 286px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: white;
+
+}
+
+.academic_container_box_items_img1,
+.academic_container_box_items_img2,
+.academic_container_box_items_img3 {
+    width: 202px;
+    height: 150px;
+}
+
+.academic_container_box_items>ul {
+    list-style: none;
+    display: flex;
+    flex-flow: column;
+    gap: 8px;
+}
+
+.academic_container_box_items>ul>li h4 {
+
+    height: 26px;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 25.83px;
+    color: #464646;
+}
+
+.academic_container_box_items>ul>li>p {
+    height: 19px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18.78px;
+    color: #464646;
+}
+
+.skills_container_box_items_ul>li {
+    /*color: red;*/
+}
+
+/*//////////// EXPERIENCE ////////////*/
+
+.experience {
+    width: 1136px;
+    height: auto;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    align-content: center;
+    gap: 32px;
+    ;
+}
+
+.experience>h2 {
+    width: 361px;
+    height: 38px;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 37.57px;
+    
+
+}
+
+.experience_container {
+    width: 1136px;
+    height: auto;
+    display: flex;
+    flex-flow: column;
+    gap: 64px;
+    
+}
+
+.experience_container_items {
+    width: 1136px;
+    height: 406px;
+    display: flex;
+    align-items: center;
+    gap: 16px
+}
+
+.experience_container_items_img {
+    width: 752px;
+    height: 406px;
+}
+.exp_cont_itm_img {
+    width: 100%;
+    height: 100%;
+}
+.experience_container_items_info {
+    width: 368px;
+    height: 112px;
+    display: flex;
+    flex-flow: column;
+    gap: 8px;
+}
+.experience_container_items_info>h2 {
+    width: 368px;
+    height: 26px;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 25.83px;
+}
+.experience_container_items_info>h3 {
+    width: 368px;
+    height: 19px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18.78px;
+}
+.experience_container_items_buttons {
+    width: 560px;
+    height: 51px;
+    gap: 16px;
+}
+.exp_cont_itm_btn_repo, .exp_cont_itm_btn_demo {
+    width: 116px;
+    height: 51px;
+    border: 1px solid #2A7AE4;    
+    padding: 16px;
+    gap: 10px
+}
+.exp_cont_itm_btn_repo {
+    color: #2A7AE4;
+}
+.exp_cont_itm_btn_demo {
+    background-color: #2A7AE4;
+    color: white;
+}
+
+/*//////////// CONTACTO ////////////*/
+.contacto {
+    width: 1440px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    background-color: #EAF2FD;
+}
+.contacto_form {
+    width: 1136px;
+    height: 660px;
+    padding: 64px 0px 0px 0px;
+    display: flex;
+    gap: 16px;
+    
+}
+.contacto_form_img {
+   
+}
+.img_form_contacto {
+    width: 100%;
+}
+.contacto_form_box {
+    width: 656px;
+    height: 596px;
+    display: flex;
+    flex-flow: column;    
+}
+.contacto_form_box>h2 {
+    width: 141px;
+    height: 38px;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 37.57px;
+}
+.contacto_form_box>h3 {
+    width: 656px;
+    height: 38px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18.78px;
+}
+.contacto_form_fields {
+    display: flex;
+    flex-flow: column;
+    gap: 32px
+}
+.contacto_form_input {
+    height: 56px;
+    gap: 8px
+}
+.contacto_form_textarea {
+    height: 133px;
+    gap: 8px
+}
+.contacto_form_button {
+    width: 144px;
+    height: 51px;
+    padding: 16px;
+    gap: 10px;
+    border: 1px solid #2A7AE4;
+    background-color: #2A7AE4;
+    color: white;
+}
+
+/*//////////// FOOTER ////////////*/
+.footer {
+    width: 1440px;
+    height: 102px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;    
+}
+.footer_container {
+    width: 229px;
+    height: 38px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18.78ps;
+    text-align: center;
+}
+
+
+.ir-arriba {
+	display:none;
+	padding:20px;
+	background:#024959;
+	font-size:20px;
+	color:#fff;
+	cursor:pointer;
+	position: fixed;
+	bottom:20px;
+	right:20px;
+}
