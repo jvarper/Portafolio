@@ -188,11 +188,11 @@
                         <h3>Completa el siguiente formulario y me pondre en contacto contigo lo antes posible.</h3>
                     </div>
                     <form class="contacto_form_box_fields">
-                        <input class="contacto_form_input" type="text" name="nombre" placeholder="Nombre" id="nombre">
-                        <input class="contacto_form_input" type="email" name="email" placeholder="Email" id="email">
-                        <input class="contacto_form_input" type="text" name="asunto" placeholder="Asunto" id="asunto">
+                        <input class="contacto_form_input" type="text" name="nombre" placeholder="Nombre" id="nombre" required>
+                        <input class="contacto_form_input" type="email" name="email" placeholder="Email" id="email" required>
+                        <input class="contacto_form_input" type="text" name="asunto" placeholder="Asunto" id="asunto" required>
                         <textarea class="contacto_form_textarea" rows="5" cols="40" name="mensaje" placeholder="Mensaje"
-                            id="parrafo"></textarea>
+                            id="parrafo" required></textarea>
                         <button class="contacto_form_button" type="submit" onclick="sendFormContact();">Enviar
                             mensaje</button>
                     </form>

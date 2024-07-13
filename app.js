@@ -4,6 +4,5 @@ const subject = document.getElementById("asunto");
 const text = document.getElementById("parrafo");
 
 function sendFormContact () {
-    alert(`Hola ${nombre}`);
-    
+   
 }
